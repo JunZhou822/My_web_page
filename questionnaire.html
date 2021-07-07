@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>questionnaire</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/questionnaire.css">
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <img src="./images/我的个人主页.png" alt="我的个人主页" class="title">
+        </div>
+    </header>
+    <nav>
+        <div class="inner">
+            <ul class="wp_nav">
+                <li class="nav-item i1 "> 
+                    <a href="index.html"><span class="item-name">个人介绍</span></a>
+                </li> 
+                <li class="nav-item i2 "> 
+                    <a href="hobbies.html"><span class="item-name">兴趣爱好</span></a>
+                </li> 
+                <li class="nav-item i3 "> 
+                    <a href="experience.html"><span class="item-name">活动经历</span></a>
+                </li> 
+                <li class="nav-item i4 "> 
+                    <a href=""  class="selected"><span class="item-name">调查问卷</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="container">
+        <div class="inner">
+            <form action="" method="POST">
+                <div id="visitor">
+                    <div id="intro">
+                        <span class="inform"><strong>页面修改意见反馈</strong></span>
+                    </div>
+                    <div id="question3" class="multiple-short-txt">
+                        <table class="question-wrapper">
+                            <tr>
+                                <td class="questiontext">
+                                    <span class="asterisk">*</span>
+                                    感谢您访问我的个人介绍页面！页面多有不足，希望您能留下宝贵的
+                                        <span class="highlight">修改意见</span>！
+                                    <p class="lineheight">如果您愿意，请留下您的
+                                        <span class="highlight">姓名</span>与<span class="highlight">联系方式</span>，您的个人信息我将会为您保密！请放心填写！</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="answer_2">
+                                    <ul>
+                                        <li id='name' class='question-item answer-item text-item'>
+                                            <label for="name">姓名</label>
+                                            <span class="subquestions-text">
+                                                <input class="text" type="text" size="20" name="name" id="name" value="">
+                                            </span>
+                                        </li>
+                                        <li id='num' class='question-item answer-item text-item'>
+                                            <label for="num">手机号</label>
+                                            <span class="subquestions-text">
+                                                <input class="text" type="text" size="20" name="num" id="num" value="">
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div id="cont">
+                    <div id="question1">
+                        <table class="question-wrapper">
+                            <tr>
+                                <td class="questiontext_1">
+                                    <span class="asterisk">*</span>
+                                    您对页面呈现的满意度如何？
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="answer">
+                                    <ul>
+                                        <li>
+                                            <input class="radio" type="radio" value="5" name="answer" id="answer-1">
+                                            <label for="answer-1" class="answertext">非常满意</label>
+                                        </li>
+                                        <li>
+                                            <input class="radio" type="radio" value="4" name="answer" id="answer-2">
+                                            <label for="answer-2" class="answertext">满意</label>
+                                        </li>
+                                        <li>
+                                            <input class="radio" type="radio" value="3" name="answer" id="answer-3">
+                                            <label for="answer-3" class="answertext">一般</label>
+                                        </li>
+                                        <li>
+                                            <input class="radio" type="radio" value="2" name="answer" id="answer-4">
+                                            <label for="answer-4" class="answertext">不满意</label>
+                                        </li>
+                                        <li>
+                                            <input class="radio" type="radio" value="1" name="answer" id="answer-5">
+                                            <label for="answer-5" class="answertext">非常不满意</label>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="question2">
+                        <table class="question-wrapper">
+                            <tr>
+                                <td class="questiontext_2">
+                                    <span class="asterisk"></span>
+                                    您对该页面设计有什么想法，请大声说出来吧！
+                                    <br>（例如：哪里有问题，哪些地方做得不够好等）
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="answer_1">
+                                    <p>
+                                        <textarea class="textarea " name="idea" id="idea" alt="答案" rows="5" cols="40"></textarea>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="button">
+                    <table class="navigator-table">
+                        <tr>
+                            <td class="submit-buttons">
+                                <input type="hidden" name="move" value="movenext" id="movenext">	
+                                <button class="submit" type="submit">
+                                    <span class="button-text">提交</span>
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="inner">
+            <img src="./images/名言.png" alt="名言">
+        </div>
+    </footer>
+</body>
+</html>
